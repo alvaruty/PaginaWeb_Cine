@@ -1,0 +1,142 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+  /* Estilos del encabezado */
+header {
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo img {
+    height: 80px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 10%;
+}
+
+nav ul li {
+    margin-left: 20px;
+    }
+
+nav ul li:first-child {
+    margin-left: 0;
+    }
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    }
+
+nav ul li a:hover {
+    text-decoration: underline;
+    }
+/* Estilos para la pantalla */
+.pantalla {
+    width: 500px;
+    height: 50px;
+    background-color: #F2F2F2;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }   
+
+.pantalla h3{
+    text-align: center;
+    top: 15px;
+    position: relative;
+    color: #333333c7;
+    }
+
+/* Estilos para los asientos */
+.seat {
+    background-color: #ddd;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.seat:not(.occupied):hover {
+    background-color: #da5555;
+}
+
+/* Estilos para los asientos ocupados */
+.seat.occupied {
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+/* Estilos para los asientos seleccionados */
+.seat.selected {
+    background-color: #333;
+}
+
+/* Estilos para el contenedor de los asientos */
+.seating-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para el botón de confirmación */
+#confirm {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 44%;
+}
+
+  /* Estilos del pie de página */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+.enlaces a {
+    color: white;
+    margin-right: 30px;
+    }
+
+.enlaces a:last-child {
+    margin-right: 0;
+    }
+
+.redes img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    }
+
+.redes img:last-child {
+    margin-right: 0;
+    }
+
